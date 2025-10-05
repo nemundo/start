@@ -1,0 +1,22 @@
+{
+    "name": "nemundo/start",
+    "description": "Starter Kit",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nemundo\\Start\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Urs Lang",
+            "email": "urs.lang@nemundo.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+  "scripts": {
+    "post-create-project-cmd": "Nemundo\\Start\\Setup\\BaseSetup::install"
+  }
+}
